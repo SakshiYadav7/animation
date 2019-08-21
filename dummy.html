@@ -1,0 +1,54 @@
+</body>
+
+</html>
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #got {
+      position: relative;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <img id="got" src="got.jpg" style="width:40%;height:auto;">
+
+
+  <script>
+  	let val=0;
+    got.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        got.style.left = timePassed / 5.5 + 'px';
+       
+if (timePassed > 3781) clearInterval(timer);
+       function rot()
+    {
+    val=val+1;
+    document.getElementById('got').style.transform="rotate("+val+"deg)";
+  
+
+}
+let tim = setInterval(rot,215);
+
+      }, 9);
+     
+    }
+    
+
+  </script>
+
+
+</body>
+
+</html>
